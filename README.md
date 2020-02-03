@@ -1,22 +1,14 @@
-# Vigenere_Cipher
+# Vigenere_Cipher/Cifra_de_Vigenere
 ------------------------------------------------------------------------------------------------------------------------------------------
 
-This is a simple version of a encryter/decrypter for the Vigenere Cipher. For now (v1.0) it only accepts a text composed of english alphabetic letters and spaces and the key can only have letters and is not case sensitive.
+This is a simple project of mine, while I learn to program in python, to do a program that can encrypt and decrypt a message using the famous [Vigenere Cipher](https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher).
 
-Esta é uma versão simples de um encriptador/decriptador para a Cifra de Vigenere. Por enquanto (v1.0) ele aceita apenas textos compostos por letras do alfabeto inglês e espaços e a chave pode ter apenas letras não importando se forem maiúsculas ou minúsculas.
+Este é um simples projeto que eu tenho, enquanto aprendo a programar em python, de criar um programa que possa codificar e decodificar uma mensagem usando a famosa [Cifra de Vigenere](https://pt.wikipedia.org/wiki/Cifra_de_Vigen%C3%A8re).
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 
-To do list:
+I plan to make the program as complete as I can and perharps even include a program to brake the cryptography.
 
-- Make the text accept more characters, like number and some special characters;
-- Make the key accept more characters;
-- Developing a tool to break the cryptography;
-
-A fazer:
-
-- Fazer com que o texto aceite mais carácters, como números e alguns carateres especiais;
-- Fazer com que a chave possa aceitar mais carácters diferentes;
-- Desenvolver uma ferramenta para quebrar o criptografia;
+Eu planejo tornar esse programa o mais completo possível e talvez até mesmo incluir um programa para quebrar a criptografia.
 
 ------------------------------------------------------------------------------------------------------------------------------------------
