@@ -1,17 +1,17 @@
 # Vigenere_Cipher
 ------------------------------------------------------------------------------------------------------------------------------------------
 
-This is a simple version of a encryter/decrypter for the Vigenere Cipher. For now (v1.0) it only accepts a text composed of english alphabetic letters and spaces and the key can only have letters and is not case sensitive.
+This is the first version of the program. It is a very limited encoder/decoder and may contain a lot os bugs/design flaws.
 
-Esta é uma versão simples de um encriptador/decriptador para a Cifra de Vigenere. Por enquanto (v1.0) ele aceita apenas textos compostos por letras do alfabeto inglês e espaços e a chave pode ter apenas letras não importando se forem maiúsculas ou minúsculas.
+Esta é a primeira versão do programa. Trata-se de um codificador/decodificador bastante limitado e deve conter uma série de bugs/falhas de design.
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 
-To do list:
+Functionality:
 
-- Make the text accept more characters, like number and some special characters;
-- Make the key accept more characters;
-- Developing a tool to break the cryptography;
+- The user decides if he wants to encrypt or decrypt a message using a shortcut-key.
+- The key is not case sensitive and can contain only letters in the english alphabet.
+- The message can contain letters/numbers/
 
 A fazer:
 
