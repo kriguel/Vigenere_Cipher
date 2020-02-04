@@ -1,5 +1,6 @@
 # Vigenere_Cipher
 ------------------------------------------------------------------------------------------------------------------------------------------
+v.1.0
 
 This is the first version of the program. It is a very limited encoder/decoder and may contain a lot os bugs/design flaws.
 
@@ -11,12 +12,12 @@ Functionality:
 
 - The user decides if he wants to encrypt or decrypt a message using a shortcut-key.
 - The key is not case sensitive and can contain only letters in the english alphabet.
-- The message can contain letters/numbers/
+- The message can contain only letters (case sensitive) anything else will not be codified (blank spaces will appear as blank spaces).
 
-A fazer:
+Funcionamento:
 
-- Fazer com que o texto aceite mais carácters, como números e alguns carateres especiais;
-- Fazer com que a chave possa aceitar mais carácters diferentes;
-- Desenvolver uma ferramenta para quebrar o criptografia;
+- O usuário escolhe se quer codificar ou decodificar uma mensagem usando um atalho.
+- A chave pode conter apenas letras, não importando se forem maiúsculas ou minúsculas.
+- A mensagem pode conter apenas letras (diferenciando maiúsulo de minúsculo) qualquer outra coisa não será codificada (espaços em branco aparecerão como espaços em branco).
 
 ------------------------------------------------------------------------------------------------------------------------------------------
