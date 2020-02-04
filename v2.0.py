@@ -1,7 +1,4 @@
-#                     CIFRA DE VIGENERE / VIGENERE'S CIPHER
-
-#  This program only accepts a text composed from letters (a-z or A-Z) and
-# spaces and the key can oly be composed from letters (a-z A-Z).
+##                     CIFRA DE VIGENERE / VIGENERE'S CIPHER
 
 
 def key_generator(txt, kw):
@@ -25,6 +22,10 @@ def cipher_encrypt(txt, kw):
 
     enc_txt = ""
     key = key_generator(txt, kw)
+    alphabet = ("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
+                "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x",
+                "y", "z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9",
+                "!", "?", "@", "#", "$", "%", "&", " ")
 
     for i in range(len(txt)):
         # Get a character from the text.
@@ -32,15 +33,14 @@ def cipher_encrypt(txt, kw):
         # Transforms the letter from the keyword in the offset number.
         offset = ord(key[i]) - 65
 
-        # Character is uppercase.
-        if char.isupper():
-            enc_txt += chr((ord(char) + offset - 65) % 26 + 65)
-        # Character is lowercase.
-        elif char.islower():
-            enc_txt += chr((ord(char) + offset - 97) % 26 + 97)
-        # Character is a space.
-        elif char == " ":
-            enc_txt += char
+        # The character is a uppercase letter.
+        if char.isupper:
+            enc_txt += alphabet[(alphabet.index(char.lower()) + offset) % len(
+                alphabet)].upper()
+
+        # Character is anything else.
+        else:
+            enc_txt += alphabet[(alphabet.index(char) + offset) % len(alphabet)]
 
     return enc_txt
 
@@ -50,6 +50,10 @@ def cipher_decrypt(txt, kw):
 
     dec_txt = ""
     key = key_generator(txt, kw)
+    alphabet = ("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
+                "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x",
+                "y", "z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9",
+                "!", "?", "@", "#", "$", "%", "&", " ")
 
     for i in range(len(txt)):
         # Get a character from the text.
@@ -57,15 +61,15 @@ def cipher_decrypt(txt, kw):
         # Transforms the letter from the keyword in the offset number.
         offset = ord(key[i]) - 65
 
-        # The character is uppercase.
-        if char.isupper():
-            dec_txt += chr((ord(char) - offset - 65) % 26 + 65)
-        # The character is lowercase.
-        elif char.islower():
-            dec_txt += chr((ord(char) - offset - 97) % 26 + 97)
-        # The character is a space.
-        elif char == " ":
-            dec_txt += char
+        # The character is a uppercase letter.
+        if char.isupper:
+            dec_txt += alphabet[(alphabet.index(char.lower()) - offset) % len(
+                alphabet)].upper()
+
+        # Character is anything else.
+        else:
+            dec_txt += alphabet[(alphabet.index(char) - offset) % len(
+                alphabet)]
 
     return dec_txt
 
